@@ -10,13 +10,13 @@
  */
 function calculate () {
   // input
-  const baseA = parseInt(document.getElementById('base-of-triangle').value)
-  const baseB = parseInt(document.getElementById('base-of-triangle').value)
-  const height = parseInt(document.getElementById('height-of-triangle').value)
+  const baseA = parseFloat(document.getElementById('base-a-of-trapezoid').value)
+  const baseB = parseFloat(document.getElementById('base-b-of-trapezoid').value)
+  const height = parseFloat(document.getElementById('height-of-trapezoid').value)
 
   // process
-  const area = (base * height) / 2
+  const area = [(baseA + baseB) / 2] * height
 
   // output
-  document.getElementById('area').innerHTML = 'The Area of the triangle is: ' + area + ' cm²'
+  document.getElementById('area').innerHTML = 'The Area of the trapezoid is: ' + area.toFixed(2) + ' cm²'
 }
