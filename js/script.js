@@ -15,7 +15,7 @@ function calculate () {
   const height = parseFloat(document.getElementById('height-of-trapezoid').value)
 
   // process
-  const area = [(baseA + baseB) / 2] * height
+  const area = ((baseA + baseB) / 2) * height
 
   // output
   document.getElementById('area').innerHTML = 'The Area of the trapezoid is: ' + area.toFixed(2) + ' cm²'
